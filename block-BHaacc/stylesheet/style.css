@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---- CUSTOM STYLING ----*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+/* ---- General section- ----*/
+
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.align-start{
+    
+    align-items: flex-start;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+/*---- Header Section ----*/
+.header{
+    padding: 36px 0;
+}
+.brand span{
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+.navbar{
+    margin-right: 200px;
+}
+.navbar li{
+        padding-left: 40px;
+        font-size: 16px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    vertical-align: top;
+    margin-right: 6px;
+}
+.nav-social{
+    flex:0 1 300px;
+}
+.nav-social a{
+    text-decoration: none;
+    color:#fff;
+    margin-left: 20px;
+    
+}
+
+
+.btn a{
+    font-size: 14px;
+    padding: 16px 32px ;
+    background-color:rgb(207,55,50);
+    border-radius: 28px;
+}
+/* -----Hero section----*/
+
+
+.hero-section{
+    background:  linear-gradient(to right,rgba(65, 127, 199,0.899),rgba(139, 242, 149,0.899)),url(../assets/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:120vh ;
+}
+
+.hero-content{
+    margin-top: 100px;
+    padding: 150px 0;
+}
+
+.col-1-2{
+    flex: 0 1 46%;
+}
+
+.hero-header h1{
+    padding: 28px 26px;
+    margin-bottom: 12px ;
+    font-size: 56px;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+.hero-text{
+    display: inline-block;
+    color: #fff;
+    vertical-align: top;
+}
+
+.hero-btn{
+    margin: 0 24px;
+    padding: 16px 32px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1.89px solid #fff;
+    border-radius:32px ;
+
+}
+.hero-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.video{
+    width: 100%;
+}
+
+/* ---- About Section ----*/
+.about-section{
+    padding: 64px;
+    
+    background: url(/assets/about-image.jpg) 90% 50%/contain no-repeat;
+}
+.intro-col-1-2{
+    flex: 0 1 46%;
+}
+.intro-col-1-2 h3{
+    margin: 16px 0;
+    font-size:36px;
+    color: #000;
+    font-weight: 400;
+    font-family:'Source Sans Pro', sans-serif;
+    
+}
+
+.intro-col-1-2 p{
+    font-size: 16px;
+    color: rgb(179, 170, 170);
+    
+}
+.progress{
+    margin-top: 32px;
+    
+}
+
+.progress p{
+    color: #000;
+}
+/* ---Our Blog section ----*/
+
+.blog-section{
+    background-color: #EFEFEF;
+
+}
+.blog-section h3{
+
+    padding: 48px 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    font-family:'Source Sans Pro', sans-serif;
+}
+.card{
+    width:  45%;
+    height: 20%;
+
+    background-color: #fff;
+}
+.card aside img{
+    width: 100%;
+   
+}
+.card h4{
+    padding: 16px 32px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family:'Source Sans Pro', sans-serif;
+}
